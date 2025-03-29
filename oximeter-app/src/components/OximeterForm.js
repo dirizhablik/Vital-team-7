@@ -109,8 +109,19 @@ const OximeterForm = () => {
   return (
     
 
+    <div>
 
+<header className="header">
+        <div className="header-content">
+          <nav className="nav">
+            <a href="#home" className="nav-link">Home</a>
+            <a href="test" className="nav-link">Measurement</a>
+            <a href="#resources" className="nav-link">Resources</a>
+          </nav>
+        </div>
+      </header>
     <div style={styles.container}>
+
       <h1>Oximeter Results</h1>
       <p>Enter your data to calculate a personalized result.</p>
       <form onSubmit={handleSubmit} style={styles.form}>
@@ -298,6 +309,7 @@ const OximeterForm = () => {
           <p>{result.message}</p>
         </div>
       )}
+    </div>
     </div>
   );
 };
