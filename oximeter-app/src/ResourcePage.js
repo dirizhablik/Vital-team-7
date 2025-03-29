@@ -4,7 +4,7 @@ import logo from './logo.png';
 
 const ResourcePage = () => {
   return (
-    <div className="homepage">
+    <div className="resource_page">
       <header className="header">
         <img src={logo} alt="OxiMe" className="logo" />
         <nav className="nav">
