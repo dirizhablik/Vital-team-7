@@ -34,6 +34,9 @@ const OximeterForm = () => {
       videoRef.current.srcObject = stream;
       videoRef.current.play();
       setShowCamera(true);
+      setTimeout(() => {
+        videoRef.current.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
     } catch (err) {
       console.error('Camera error:', err);
     }
@@ -107,11 +110,8 @@ const OximeterForm = () => {
  };
 
   return (
-    
-
     <div>
-
-<header className="header">
+      <header className="header">
         <div className="header-content">
           <nav className="nav">
             <a href="/" className="nav-link">Home</a>
@@ -269,13 +269,19 @@ const OximeterForm = () => {
         />
         <button onClick={startCamera} style={styles.button}>📷 Open Camera</button>
 
-        {showCamera && (
-          <div>
-            <video ref={videoRef} style={{ width: '100%', maxWidth: '300px', marginTop: '10px' }} />
-            <canvas ref={canvasRef} style={{ display: 'none' }} />
-            <button onClick={capturePhoto} style={styles.button}>📸 Capture & Detect</button>
+        <div style={styles.cameraSection}>
+          <video
+            ref={videoRef}
+            autoPlay
+            playsInline
+            muted
+            style={styles.videoPreview}
+          />
+          <canvas ref={canvasRef} style={{ display: 'none' }} />
+          <div style={styles.cameraControls}>
+            <button type="button" onClick={capturePhoto} style={styles.button}>📸 Capture & Detect</button>
           </div>
-        )}
+        </div>
         <div style={styles.skinColors}>
           {monkSkinTones.map((color, index) => (
             <button
@@ -304,9 +310,45 @@ const OximeterForm = () => {
       )}
 
       {result && (
-        <div style={styles.resultBox}>
+        <div
+          style={{
+            ...styles.resultBox,
+            backgroundColor:
+              result.status === 'Error'
+                ? '#fff3cd'
+                : result.predicted_spo2 < 90
+                ? '#f8d7da'
+                : result.predicted_spo2 < 94
+                ? '#fff3cd'
+                : '#e8f5e9',
+            color:
+              result.status === 'Error'
+                ? '#856404'
+                : result.predicted_spo2 < 90
+                ? '#721c24'
+                : result.predicted_spo2 < 94
+                ? '#856404'
+                : '#2e7d32',
+          }}
+        >
           <h3>{result.status}</h3>
           <p>{result.message}</p>
+
+          {result.predicted_spo2 < 90 && (
+            <p><strong>⚠️ Your SpO₂ is dangerously low. Please seek immediate medical attention.</strong></p>
+          )}
+          {result.predicted_spo2 >= 90 && result.predicted_spo2 < 94 && (
+            <p>
+              🟡 Your oxygen level is slightly below normal. Consider checking our{' '}
+              <a href="#resources" style={{ textDecoration: 'underline', color: 'inherit' }}>
+                Resources page
+              </a>{' '}
+              for more information and health tips.
+            </p>
+          )}
+          {result.predicted_spo2 >= 94 && (
+            <p>✅ Your oxygen level looks good. Stay healthy and keep monitoring regularly!</p>
+          )}
         </div>
       )}
     </div>
@@ -359,9 +401,22 @@ const styles = {
   resultBox: {
     marginTop: '20px',
     padding: '20px',
-    backgroundColor: '#e8f5e9',
     borderRadius: '10px',
-    color: '#2e7d32',
+  },
+  cameraSection: {
+    marginTop: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  videoPreview: {
+    borderRadius: '12px',
+    maxWidth: '100%',
+    height: 'auto',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+  },
+  cameraControls: {
+    marginTop: '10px',
   },
 };
 

@@ -66,7 +66,7 @@ def analyze():
         'age': [age],
         'Heart rate': [pulse],
         'Body temperature': [temperatue],
-        'Body weight': [weight],
+        'Body weight': [float(weight) * 16],  # Convert lbs to ounces
         'Body height': [height],
         'skin_tone_group': [skin_color_group],
         'Blood pressure device Cuff pressure.mean': [blood_pressure],
