@@ -27,7 +27,6 @@ const HomePage = () => {
        </p>
      </section>
 
-
      <div className="illustration">
        <img src="/images/hero-illustration.png" alt="illustration" />
      </div>
