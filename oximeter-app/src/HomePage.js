@@ -29,8 +29,10 @@ const HomePage = () => {
               Assess your hypoxemia risk with our 5-minute test.
               <span className="highlight">Accurate for all skin tones.</span>
             </p>
+
             <button className="cta-button">
-              Start Free Assessment
+            <a href="test" className="nav-link"> Start Free Assessment</a>
+              {/* Start Free Assessment */}
               <span className="button-arrow">→</span>
             </button>
           </div>

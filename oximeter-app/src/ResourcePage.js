@@ -8,8 +8,8 @@ const ResourcePage = () => {
      <header className="header">
        <img src={logo} alt="OxiMe" className="logo" />
        <nav className="nav">
-         <a href="#test">Home</a>
-         <a href="#features">Test</a>
+         <a href="">Home</a>
+         <a href="#test">Test</a>
          <a href="#team">Resource</a>
        </nav>
      </header>
