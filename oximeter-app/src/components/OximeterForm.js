@@ -107,6 +107,9 @@ const OximeterForm = () => {
  };
 
   return (
+    
+
+
     <div style={styles.container}>
       <h1>Oximeter Results</h1>
       <p>Enter your data to calculate a personalized result.</p>

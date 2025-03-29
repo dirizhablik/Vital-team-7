@@ -11,7 +11,7 @@ const HomePage = () => {
           <img src={logo} alt="OxiMe" className="logo" />
           <nav className="nav">
             <a href="#home" className="nav-link">Home</a>
-            <a href="#features" className="nav-link">Features</a>
+            <a href="test" className="nav-link">Measurement</a>
             <a href="#resources" className="nav-link">Resources</a>
           </nav>
         </div>
