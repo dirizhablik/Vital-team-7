@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="header-content">
           <img src={logo} alt="OxiMe" className="logo" />
           <nav className="nav">
-            <a href="#home" className="nav-link">Home</a>
+            <a href="" className="nav-link">Home</a>
             <a href="test" className="nav-link">Measurement</a>
             <a href="#resources" className="nav-link">Resources</a>
           </nav>
