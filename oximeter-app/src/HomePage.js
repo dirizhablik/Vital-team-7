@@ -1,43 +1,72 @@
 import React from 'react';
 import './HomePage.css';
-import logo from './logo.png';
-
+import logo from './logo.png'; // Make sure this path is correct
 
 const HomePage = () => {
- return (
-   <div className="homepage">
-     <header className="header">
-       <img src={logo} alt="OxiMe" className="logo" />
-       <nav className="nav">
-         <a href="#home">Home</a>
-         <a href="#features">Features</a>
-         <a href="#team">Resources</a>
-       </nav>
-     </header>
+  return (
+    <div className="homepage">
+      {/* Restored Header */}
+      <header className="header">
+        <div className="header-content">
+          <img src={logo} alt="OxiMe" className="logo" />
+          <nav className="nav">
+            <a href="#home" className="nav-link">Home</a>
+            <a href="#features" className="nav-link">Features</a>
+            <a href="#resources" className="nav-link">Resources</a>
+          </nav>
+        </div>
+      </header>
 
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <div className="text-content">
+            <h1 className="hero-title">
+              <span className="quote-mark">“</span>
+              Empowering Health, One Test at a Time”
+            </h1>
+            <p className="hero-subtitle">
+              Assess your hypoxemia risk with our 5-minute test.
+              <span className="highlight">Accurate for all skin tones.</span>
+            </p>
+            <button className="cta-button">
+              Start Free Assessment
+              <span className="button-arrow">→</span>
+            </button>
+          </div>
+          
+          <div className="illustration-container">
+            <img 
+              src="https://www.fda.gov/files/Picture1_16.png" 
+              alt="Health assessment illustration"
+              className="hero-illustration"
+            />
+          </div>
+        </div>
+      </section>
 
-     <section className="hero">
-       <h1 className="quote">"Empowering Health, One Test at a Time"</h1>
-       <p className="subtitle">
-         Take our quick 5-minute test to assess your risk for hypoxemia. Our results are designed to be accurate for people of all skin tones.
-       </p>
-       <button className="cta-button">Start the Test</button>
-       {/* <div className="hero-image">
-         <img src={logo} alt="OxiMe" className="hero-logo" />
-       </div> */}
-       <p className="long-description">
-         In 2017, respiratory diseases were the 3rd leading cause of death. Hypoxemia, a condition where the body’s oxygen levels are dangerously low, affects many people with respiratory diseases. It demands a well-rounded diagnostic tool because it can lead to lifelong brain damage or death.
-         Unfortunately, many countries lack accessible and accurate diagnostic resources. Our goal is to improve the accuracy of the pulse oximeter, an affordable device for measuring blood oxygen levels, especially for those with darker skin tones. Our model, trained on diverse health data, aims to address these accuracy issues and promote healthcare equity.
-       </p>
-     </section>
-
-
-     <div className="illustration">
-       <img src="/images/hero-illustration.png" alt="illustration" />
-     </div>
-   </div>
- );
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats-content">
+          <h2 className="stats-heading">Why It Matters</h2>
+          <div className="stats-grid">
+            <div className="stat-item">
+              <h3>3rd</h3>
+              <p>Leading cause of death (respiratory diseases, 2017)</p>
+            </div>
+            <div className="stat-item">
+              <h3>100M+</h3>
+              <p>People affected by hypoxemia worldwide</p>
+            </div>
+            <div className="stat-item">
+              <h3>40%</h3>
+              <p>Improved accuracy for darker skin tones</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
-
 
 export default HomePage;
