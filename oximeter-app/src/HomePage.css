@@ -1,0 +1,119 @@
+body {
+ margin: 0;
+ font-family: 'Segoe UI', sans-serif;
+ background-color: #f9f9f9;
+ color: #333;
+ }
+
+
+ .homepage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+
+
+ .header {
+ width: 100%;
+ padding: 20px 40px;
+ background-color: white;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+
+ .logo {
+ height: 80px;
+ }
+
+
+ .nav {
+ display: flex;
+ gap: 24px;
+ }
+
+
+ .nav a {
+ text-decoration: none;
+ color: #333;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ }
+
+
+ .nav a:hover {
+ color: #6c63ff;
+ }
+
+
+ .login-btn {
+ background-color: transparent;
+ border: 2px solid #6c63ff;
+ padding: 8px 16px;
+ border-radius: 25px;
+ font-weight: 500;
+ color: #6c63ff;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ }
+
+
+ .login-btn:hover {
+ background-color: #6c63ff;
+ color: white;
+ }
+
+
+ .hero {
+ background-color: #5ba7c0;
+ width: 100%;
+ padding: 100px 100px 500px;
+ text-align: center;
+ color: white;
+ }
+
+
+ .quote {
+ font-size: 40px;
+ font-weight: bold;
+ margin-bottom: 20px;
+ }
+
+
+ .subtitle {
+ font-size: 18px;
+ max-width: 600px;
+ margin: 0 auto 30px;
+ }
+
+
+ .cta-button {
+ background-color: #814fbf;
+ border: none;
+ color: white;
+ font-size: 18px;
+ padding: 12px 32px;
+ border-radius: 30px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ }
+
+
+ .cta-button:hover {
+ background-color: #6b3ea1;
+ }
+
+
+ .illustration {
+ margin-top: -60px;
+ }
+
+
+ .illustration img {
+ width: 100%;
+ max-width: 900px;
+ display: block;
+ margin: 0 auto;
+ } 
