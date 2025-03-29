@@ -1,11 +1,11 @@
 import React from 'react';
 import './HomePage.css';
-import logo from './logo.png'; // Make sure this path is correct
+import logo from './logo.png';
 
 const HomePage = () => {
   return (
     <div className="homepage">
-      {/* Restored Header */}
+      {/* Header Section */}
       <header className="header">
         <div className="header-content">
           <img src={logo} alt="OxiMe" className="logo" />
@@ -31,8 +31,7 @@ const HomePage = () => {
             </p>
 
             <button className="cta-button">
-            <a href="test" className="nav-link"> Start Free Assessment</a>
-              {/* Start Free Assessment */}
+              <a href="test" className="nav-link">Start Free Assessment</a>
               <span className="button-arrow">→</span>
             </button>
           </div>
@@ -64,6 +63,38 @@ const HomePage = () => {
               <h3>40%</h3>
               <p>Improved accuracy for darker skin tones</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources Section */}
+      <section className="resources-section" id="resources">
+        <div className="resources-content">
+          <h2 className="section-heading">Helpful Resources</h2>
+          <div className="resource-grid">
+            <a href="https://my.clevelandclinic.org/health/diagnostics/22409-arterial-blood-gas-abg" 
+               className="resource-card"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <h3>Arterial Blood Gas (ABG) Test</h3>
+              <p>Cleveland Clinic Guide</p>
+            </a>
+            
+            <a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" 
+               className="resource-card"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <h3>Understanding Hypoxemia</h3>
+              <p>Mayo Clinic Overview</p>
+            </a>
+            
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7284317/" 
+               className="resource-card"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <h3>Pulse Oximetry Research</h3>
+              <p>NIH Published Study</p>
+            </a>
           </div>
         </div>
       </section>
