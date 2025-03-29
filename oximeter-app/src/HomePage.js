@@ -19,7 +19,7 @@ const HomePage = () => {
        <h1 className="quote">"SLOGAN"</h1>
        <img src={logo} alt="OxiMe" className="logo" />
        <p className="subtitle">
-        YAP
+        If you’re concerned about your health, take our quick 5-minute test to assess your risk for hypoxemia, the condition where the body’s oxygen becomes very low. Our results are designed to be accurate for people of all skin tones.
        </p>
        <button className="cta-button">Start the Test</button>
        <p className="subtitle">
