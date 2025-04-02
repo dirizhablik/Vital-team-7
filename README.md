@@ -1,10 +1,18 @@
-**OXIME**
-Today, at home pulse oximeter are often inaccurate on people with darker skin tones which can often lead to 
-misdiangnosis and delayed treatment for respiratpry diseases, like hypoxemia which is chronic and life threatening.
-**OXIME** allows users to input their own readings through an online **assement** and **camera** which can detect skin tones and 
-help determine user's risk of hypoxemia, based on our more accurate model trained on dataset more accurate for pulse oximeter 
-readings on more skin tone.
+# **OXIME**
 
-Tech Used: Python, CSS, HTML, Node
+## **OVERVIEW**
+Pulse oximeters used at home are often inaccurate for people with darker skin tones, leading to misdiagnosis and delayed treatment of respiratory diseases like hypoxemia—a chronic and life-threatening condition.
+
+**OXIME** provides a more accurate assessment by allowing users to input their own readings through an online assessment and camera-based skin tone detection. Our model, trained on a more representative dataset, improves pulse oximeter accuracy across diverse skin tones, helping to better assess the risk of hypoxemia.
+
+### **FEAURES**
+5 Minute Personalized Risk Assessment – Users can input pulse oximeter readings alongside a skin tone analysis for a more accurate result.
+Skin Tone Detection Camera – A built-in camera feature helps adjust readings based on the Monk skin tone scale which is proven to be more accuarte and inclusive to more skin colors.
+Data-Driven Model – Our AI model is trained on a dataset optimized for more accurate pulse oximeter readings across different skin tones.
+
+#### **TECH USED**
+Frontend: HTML, CSS
+Backend: Node.js
+Machine Learning: Python
 
 Our presentation : https://www.canva.com/design/DAGjHVkNsMA/DcBbVaOlD2Ls_jTlBDphCw/edit?utm_content=DAGjHVkNsMA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
