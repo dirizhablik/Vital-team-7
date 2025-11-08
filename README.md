@@ -19,6 +19,7 @@ Our presentation : https://www.canva.com/design/DAGjHVkNsMA/DcBbVaOlD2Ls_jTlBDph
 
 #### **MODEL DETAILS**
 Model: Xgboost Regression Model
+
 Findings:
 
-![bar graph proving home oximeters are racist]("oximeter-app\src\oxygen_findings.png")
+![bar graph proving home oximeters are racist]("Vital-team-7\oximeter-app\src\oxygen_findings.png"")
