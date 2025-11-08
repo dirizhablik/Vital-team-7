@@ -20,7 +20,12 @@ Our presentation : https://www.canva.com/design/DAGjHVkNsMA/DcBbVaOlD2Ls_jTlBDph
 #### **INSTALLATION INSTRUCTIONS**
 
 git clone https://github.com/Vital-team-7/oximeter-app
+
 npm install
+
 npm start
+
+!("oximeter-app\Screenshot 2025-11-07 215159.png")
+
 
 
