@@ -16,3 +16,9 @@ Backend: Node.js
 Machine Learning: Python
 
 Our presentation : https://www.canva.com/design/DAGjHVkNsMA/DcBbVaOlD2Ls_jTlBDphCw/edit?utm_content=DAGjHVkNsMA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
+#### **MODEL DETAILS**
+Model: Xgboost Regression Model
+Findings:
+
+![bar graph proving home oximeters are racist]("oximeter-app\src\oxygen_findings.png")
