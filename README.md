@@ -17,13 +17,7 @@ Machine Learning: Python
 
 Our presentation : https://www.canva.com/design/DAGjHVkNsMA/DcBbVaOlD2Ls_jTlBDphCw/edit?utm_content=DAGjHVkNsMA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
-#### **INSTALLATION INSTRUCTIONS**
 
-'''
-git clone https://github.com/Vital-team-7/oximeter-app
-npm install
-npm start
-'''
 
 
 
