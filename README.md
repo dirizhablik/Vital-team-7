@@ -22,4 +22,4 @@ Model: Xgboost Regression Model
 
 Findings:
 
-![bar graph proving home oximeters are racist]("Vital-team-7\oximeter-app\src\oxygen_findings.png"")
+![bar graph proving home oximeters are racist]("src\oxygen_findings.png")
