@@ -5,7 +5,7 @@ Pulse oximeters used at home are often inaccurate for people with darker skin to
 
 **OXIME** provides a more accurate assessment by allowing users to input their own readings through an online assessment and camera-based skin tone detection. Our model, trained on a more representative dataset, improves pulse oximeter accuracy across diverse skin tones, helping to better assess the risk of hypoxemia.
 
-### **FEAURES**
+### **FEATURES**
 5 Minute Personalized Risk Assessment – Users can input pulse oximeter readings alongside a skin tone analysis for a more accurate result.
 Skin Tone Detection Camera – A built-in camera feature helps adjust readings based on the Monk skin tone scale which is proven to be more accuarte and inclusive to more skin colors.
 Data-Driven Model – Our AI model is trained on a dataset optimized for more accurate pulse oximeter readings across different skin tones.
